@@ -349,7 +349,6 @@ Plugin.prototype.load = function(event) {
                 // else, compare the file extention to mime times of common audio formats.
                 } else {
                     var ext = $(that.trackSources[i][j]).attr('src').substring($(that.trackSources[i][j]).attr('src').lastIndexOf("."));
-                    console.log(ext);
                     var mime = mimeTypeTable[ext] !== undefined ? mimeTypeTable[ext] : "audio/"+ext.substr(1)+";";
                 }
 
